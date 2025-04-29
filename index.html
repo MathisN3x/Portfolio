@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Mathis | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --accent-color: #0d6efd;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: 0.4s;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .carousel > div {
+            flex: 0 0 auto;
+            scroll-snap-align: center;
+            min-width: 300px;
+        }
+
+        .w3-progress-container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body class="w3-animate-opacity">
+    <div class="w3-bar w3-black w3-large">
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Accueil</a>
+        <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-code"></i> Projets</a>
+        <a href="#certificates" class="w3-bar-item w3-button"><i class="fa fa-certificate"></i> Certificats</a>
+        <a href="#skills" class="w3-bar-item w3-button"><i class="fa fa-tools"></i> Compétences</a>
+        <a href="#goals" class="w3-bar-item w3-button"><i class="fa fa-bullseye"></i> Objectifs</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+        <button onclick="toggleTheme()" class="w3-bar-item w3-button w3-right"><i class="fa fa-moon"></i> Thème</button>
+    </div>
+
+    <header class="w3-center w3-padding-32">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGiZwRSH6htCg/profile-displayphoto-shrink_400_400/B4DZZ4K9ZPHIAg-/0/1745772862299?e=1751500800&v=beta&t=igldgLsRerzzIfpHXeWWke4Jv1bFVPiIhAfdAhWk9RQ"
+         alt="Photo de profil de Mathis"
+         class="w3-circle w3-margin-bottom"
+         style="width:180px;height:180px;object-fit:cover;">
+    <h2 class="w3-xxlarge">Mathis BILLA</h2>
+    <p class="w3-large">
+        Étudiant en 1ère C au Lycée Scientifique National de Bobo-Dioulasso.<br>
+        Passionné par les mathématiques appliquées, l’intelligence artificielle et le développement technologique de l’Afrique.<br>
+        Président des clubs de Mathématiques et de Sciences, je cherche des solutions innovantes pour contribuer au dévéloppement du continent.
+    </p>
+</header>
+<p style="text-align: center;">Développé avec ❤️ par Mathis</p>
+
+    <section class="w3-container" id="projects">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Mes Projets</h3>
+        <div class="carousel">
+            <div class="w3-card w3-dark-grey w3-padding">
+                <h4><a href="https://mathisn3x.github.io/ui-ux/" target="_blank"><i class="fas fa-pencil-ruler"></i> UI/UX Design</a></h4>
+                <iframe src="https://mathisn3x.github.io/ui-ux/" loading="lazy"></iframe>
+                <p>Un design Web fluide et élégant</p>
+            </div>
+            <div class="w3-card w3-dark-grey w3-padding">
+                <h4><a href="https://mathisn3x.github.io/african-history-library/" target="_blank"><i class="fas fa-robot"></i> African History Library</a></h4>
+                <iframe src="https://mathisn3x.github.io/african-history-library/" loading="lazy"></iframe>
+                <p>Promotion de la culture Africaine</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="w3-container" id="certificates">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Certificats</h3>
+        <ul class="w3-ul w3-hoverable">
+            <li><i class="fa fa-check"></i><a href="certifs/Excel.pdf">Certificate in Data Analytics with Excel</a> </li>
+            <li><i class="fa fa-check"></i><a href="certifs/Cryptography.pdf">Certificate in Cryptography</a></li>
+        </ul>
+    </section>
+
+    <section class="w3-container" id="skills">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Compétences</h3>
+        <p><i class="fab fa-html5"></i> HTML</p>
+        <div class="w3-light-grey w3-round">
+            <div class="w3-blue w3-round" style="height:24px;width:95%">95%</div>
+        </div>
+        <p><i class="fab fa-css3-alt"></i> CSS</p>
+        <div class="w3-light-grey w3-round">
+            <div class="w3-blue w3-round" style="height:24px;width:85%">85%</div>
+        </div>
+        <p><i class="fab fa-python"></i> Python</p>
+        <div class="w3-light-grey w3-round">
+            <div class="w3-blue w3-round" style="height:24px;width:95%">95%</div>
+        </div>
+    </section>
+
+    <section class="w3-container" id="goals">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Objectifs Futurs</h3>
+        <ul class="w3-ul">
+            <li>📈 Créer une entreprise de conseil en IA et mathématiques appliquées</li>
+            <li>🌍 Mettre les maths et l'informatique au service du développement de l’Afrique</li>
+        </ul>
+    </section>
+
+    <section class="w3-container" id="contact">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Me Contacter</h3>
+        <p><a class="w3-button w3-blue w3-round" target="_blank" href="https://www.linkedin.com/in/w-f-mathis-billa-21884533b/"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+        <p>Visiteurs : <span id="visit-counter">...</span></p>
+    </section>
+
+    <script>
+        // Thème intelligent basé sur l’heure
+        function toggleTheme() {
+            const root = document.documentElement;
+            const currentBg = getComputedStyle(root).getPropertyValue('--bg-color');
+            root.style.setProperty('--bg-color', currentBg.trim() === '#121212' ? '#ffffff' : '#121212');
+            root.style.setProperty('--text-color', currentBg.trim() === '#121212' ? '#000000' : '#ffffff');
+        }
+
+        // Compteur de visite basique (localStorage demo)
+        let visits = localStorage.getItem('visits') || 0;
+        visits++;
+        localStorage.setItem('visits', visits);
+        document.getElementById('visit-counter').textContent = visits;
+    </script>
+</body>
+
+</html>

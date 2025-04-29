@@ -1,0 +1,89 @@
+/* --- Style général --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- Navigation --- */
+.w3-bar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.w3-bar-item:hover {
+    background-color: #0d6efd !important;
+    color: white !important;
+    transition: background-color 0.3s ease;
+}
+
+/* --- Titres --- */
+h3, h4 {
+    color: #0b5394;
+}
+
+/* --- Cartes de projets --- */
+.w3-card-4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.w3-card-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Images projets --- */
+.projects img {
+    border-bottom: 1px solid #ddd;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.projects img:hover {
+    filter: grayscale(0%);
+}
+
+/* --- Boutons --- */
+a.w3-button {
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+a.w3-button:hover {
+    transform: scale(1.05);
+}
+
+/* --- Barres de compétences --- */
+.skills .w3-container {
+    animation: progress 2s ease-out forwards;
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+}
+
+/* --- Section contact --- */
+#contact {
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    border-top: 2px solid #ccc;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .projects .project {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+iframe {
+    width: 90%;
+    height: 300px;
+    border: 2px solid #555;
+    border-radius: 8px;
+  }
